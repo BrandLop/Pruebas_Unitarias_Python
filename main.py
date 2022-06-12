@@ -8,6 +8,17 @@ def palindrome(sentence: str) -> bool:
 
     Returns:
         bool: True if the sentence is a palindrome, False otherwise.
+
+    Examples:
+        >>> palindrome("racecar")
+        True
+        >>> palindrome("arañara")
+        True
+        >>> palindrome("Hola mundo")
+        False
+        >>> sentence = "rotor"
+        >>> palindrome(sentence)
+        True
     """
     sentence = sentence.replace(" ", "").lower()
     return sentence == sentence[::-1]
